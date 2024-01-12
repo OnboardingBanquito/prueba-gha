@@ -17,6 +17,6 @@ jobs:
       - run: npm test
       - run: npm run start
     
-      - name: Read variables
-        run: echo "enviroments ${{ env.USERDEV }}"
+      - name: variables
+        run: printenv
 
