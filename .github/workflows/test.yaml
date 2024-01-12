@@ -18,5 +18,5 @@ jobs:
       - run: npm run start
     
       - name: Read variables
-        run: echo "enviroments ${{ env }}"
+        run: echo "enviroments ${{ env.USERDEV }}"
 
