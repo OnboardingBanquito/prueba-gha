@@ -1,5 +1,5 @@
-console.log('testing');
+const calculator = require('./calculator');
 
-function test() {
-  console.log('test');
-}
+const suma = calculator.suma(2,3);
+
+console.log(suma);
