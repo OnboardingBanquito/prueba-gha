@@ -4,8 +4,9 @@ on:
     branches:
       - dev
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -15,3 +16,7 @@ jobs:
       - run: npm install
       - run: npm test
       - run: npm run start
+    
+      - name: Read variables
+        run: echo "enviroments ${{ vars.USERDEV}}"
+
