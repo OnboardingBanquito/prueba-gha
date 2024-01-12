@@ -12,7 +12,5 @@ jobs:
         with:
           node-version: '20'
       - run: ls
-      - run: cd frontend
-      - run: ls
       - run: npm install
       - run: npm test
